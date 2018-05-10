@@ -1,4 +1,4 @@
-package com.infosys.testing.ebayLibrary;
+package com.Pracelpoint.testing.PracelLibrary;
 
 import java.io.File;
 import java.io.InputStream;
@@ -62,7 +62,7 @@ public class Reusable
     {		
 		//System.out.println("Here in Setupdriver In Reusable::");
 		env_name = env;
-        if(env_name.equalsIgnoreCase("test")) filename = com.infosys.testing.ebay.Utils.ConstantsProperties.TestPropFile;
+        if(env_name.equalsIgnoreCase("test")) filename = com.Pracelpoint.testing.Pracel.Utils.ConstantsProperties.TestPropFile;
 	    loader = Thread.currentThread().getContextClassLoader();
 	    try
 	    {
@@ -296,5 +296,32 @@ public class Reusable
 		}		
 	}
 	
-	
+	public static void VerifyActualTextExpected(WebElement Actualelement,WebElement Expectedelement,WebDriver driver) throws Exception
+	{
+	try
+	{
+		WebElement WebActualement= Actualelement;
+		String Actualvalue=WebActualement.getText();
+		WebElement WebExpectedelement= Expectedelement;
+		String Expectedvalue=WebExpectedelement.getText();
+		System.out.println("Actual value : "+Actualvalue +" Expectedvalue "+Expectedvalue);
+		if(Actualvalue.contains(Expectedvalue))
+			{				
+				logMessage(Actualvalue+" Contains ", Expectedvalue+" Hence ", "pass");		
+				Reporter.log(Actualvalue+" Contains"+Expectedvalue+" Hence "+ "pass");
+				System.out.println(Actualvalue+" Contains "+ Expectedvalue+" Hence "+ "pass");
+			}
+			else
+			{
+				logMessage(Actualvalue+" does not Contain", Expectedvalue+" Hence ", "fail");
+				Reporter.log(Actualvalue+" does not Contain"+Expectedvalue+" Hence "+ "fail");
+				System.out.println(Actualvalue+" does not Contain"+Expectedvalue+" Hence "+ "fail");
+				supertestNG.takeScreenshot(driver);
+			}
+		}catch(Exception e){
+			logMessage("Verify Actual Text and Expected is not display.","Exception occured. Exception : "+e.getMessage(), "fail");
+			Reporter.log("Verify Actual Text and Expected is not display.,Exception occured. Exception : "+e.getMessage()+ "fail");
+			supertestNG.takeScreenshot(driver);
+		}		
+	}
 }

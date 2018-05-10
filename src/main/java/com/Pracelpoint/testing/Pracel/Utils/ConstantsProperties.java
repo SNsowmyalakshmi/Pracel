@@ -1,4 +1,4 @@
-package com.infosys.testing.ebay.Utils;
+package com.Pracelpoint.testing.Pracel.Utils;
 
 
 // TODO: Auto-generated Javadoc

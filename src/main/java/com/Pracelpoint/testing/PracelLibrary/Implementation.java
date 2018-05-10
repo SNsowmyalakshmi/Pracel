@@ -1,7 +1,8 @@
-package com.infosys.testing.ebayLibrary;
+package com.Pracelpoint.testing.PracelLibrary;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 
 /**
@@ -65,7 +66,21 @@ public class Implementation
 		return element;
 	 }
 	
-
+	public static WebElement SelectValue(WebDriver driver, WebElement element, String Text)
+	{
+	 try
+	 { 
+		 Select Select = new Select(element);
+		 Select.selectByVisibleText(Text);
+		 System.out.println("Text value ");
+	 }
+	 catch (Exception e)
+	 {
+		 e.printStackTrace();
+		 
+	 }
+		return element;
+	 }
 	
 	
 	

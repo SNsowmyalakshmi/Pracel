@@ -1,4 +1,4 @@
-package com.infosys.testing.ebayLibrary;
+package com.Pracelpoint.testing.PracelLibrary;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -81,7 +81,7 @@ public class SuperTestNG
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		//The below method will save the screen shot in d drive with name "screenshot.png"
 		timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime()); 
-		screenShotName = new File("E:\\Workspaces\\gMinute_Workspace\\Testing\\Screenshots\\"+timeStamp+".png");
+		screenShotName = new File("E:\\Workspaces\\Pracelpoint\\Testing\\Screenshots\\"+timeStamp+".png");
 		FileUtils.copyFile(scrFile, screenShotName);
 		 
 		String filePath = screenShotName.toString();

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\Workspaces\gMinute_Workspace\Testing\testng.xml</span>
+                    <span>E:\Workspaces\Pracelpoint\Testing\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.infosys.testing.ebayRegression_Suite.TestExecution" hash-for-method="ebayLaunch_Verify">ebayLaunch_Verify</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.Pracelpoint.testing.PracelRegression_Suite.TestExecution" hash-for-method="PracelpointLaunch_Verify">PracelpointLaunch_Verify</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,46 +117,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.infosys.testing.ebayRegression_Suite.TestExecution</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.Pracelpoint.testing.PracelRegression_Suite.TestExecution</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ebayLaunch_Verify">
-                  </a> <!-- ebayLaunch_Verify -->
-                  <span class="method-name">ebayLaunch_Verify</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;srp-carousel&apos;]//button[2]&quot;}
-  (Session info: chrome=65.0.3325.181)
-  (Driver info: chromedriver=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 500.28 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
-System info: host: &apos;DESKTOP-80BPIUS&apos;, ip: &apos;192.168.214.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed), userDataDir=C:\Users\Home\AppData\Local\Temp\scoped_dir10460_15780}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 0bdadd8e85c9806f4a727ce997e4ee72
-*** Element info: {Using=xpath, value=//div[@class=&apos;srp-carousel&apos;]//button[2]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at com.infosys.testing.ebayRegression_Suite.TestExecution.ebayLaunch_Verify(TestExecution.java:42)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
+                  <a name="PracelpointLaunch_Verify">
+                  </a> <!-- PracelpointLaunch_Verify -->
+                  <span class="method-name">PracelpointLaunch_Verify</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Workspaces\gMinute_Workspace\Testing\testng.xml</span>
+            <span class="header-content">E:\Workspaces\Pracelpoint\Testing\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -168,11 +147,11 @@ Session ID: 0bdadd8e85c9806f4a727ce997e4ee72
   &lt;parameter name=&quot;url&quot; value=&quot;ebay&quot;/&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.infosys.testing.ebayRegression_Suite.TestExecution&quot;&gt;
+      &lt;class name=&quot;com.Pracelpoint.testing.PracelRegression_Suite.TestExecution&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;ebayLaunch_Verify&quot;/&gt;
+          &lt;include name=&quot;PracelpointLaunch_Verify&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.infosys.testing.ebayRegression_Suite.TestExecution --&gt;
+      &lt;/class&gt; &lt;!-- com.Pracelpoint.testing.PracelRegression_Suite.TestExecution --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -214,14 +193,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ebayLaunch_Verify')
-data.setCell(0, 2, 'com.infosys.testing.ebayRegression_Suite.TestExecution')
-data.setCell(0, 3, 512866);
+data.setCell(0, 1, 'PracelpointLaunch_Verify')
+data.setCell(0, 2, 'com.Pracelpoint.testing.PracelRegression_Suite.TestExecution')
+data.setCell(0, 3, 25594);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -233,9 +212,12 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">ebayLaunch_Verify</span>
+              <span class="reporter-method-name">PracelpointLaunch_Verify</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">==========#ebay Test Case========</span>
+                <span class="reporter-method-output">Kennards Wentworthville ParcelPoint
+409 Great Western Highway
+Wentworthville, NSW 2145Open: Mon-Fri 8am-5.30pm, Sat 9am-5pm, Sun 10am-4pm ContainsKennards Wentworthville ParcelPoint Hence pass</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,20 +235,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.infosys.testing.ebayRegression_Suite.TestExecution</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Pracelpoint.testing.PracelRegression_Suite.TestExecution</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">driverSetup(test)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchBrowser(chrome)</span>
-                <span class="method-start">83 ms</span>
+                <span class="method-start">56 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">ebayLaunch_Verify</span>
-                <span class="method-start">3769 ms</span>
+                <span class="method-name">PracelpointLaunch_Verify</span>
+                <span class="method-start">5314 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -4,10 +4,10 @@
   	<parameter name="Broswer" value="chrome"/> 
    	<test name="Test" parallel="none">> 
   	<classes>    
-    	<class name= "com.infosys.testing.ebayRegression_Suite.TestExecution"/>
+    	<class name= "com.Pracelpoint.testing.PracelRegression_Suite.TestExecution"/>
    		<methods>
      	<Test>
-     		<include name="ebayLaunch_Verify"/>     				   		
+     		<include name="PracelpointLaunch_Verify"/>     				   		
         </Test>
     	</methods>      	  
   	</classes>      
